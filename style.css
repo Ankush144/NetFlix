@@ -1,0 +1,378 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+   /* border: 1px solid white; */
+    /*  */
+}
+html{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:url('images/back_ground.jpg');
+    /* background-repeat: no-repeat; */
+}
+/* coding of intro part starts here */
+.intro{
+    background: linear-gradient(to bottom,rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 120vh;
+    /* border:1px solid white; */
+}
+/* coding of header starts here */
+.intro .header img{
+    width: 10.5rem;
+    margin-left:2.5rem;
+    margin-top:0.7rem;
+    /* border:1px solid white; */
+}
+.intro .header .services{
+    /* border: 1px solid white; */
+    width: max-content;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right:4rem;
+    margin-top:1.8rem;
+}
+.intro .header .services #lang{
+    float: right;
+    border:0.3px solid white;
+    padding:0.7rem;
+    border-radius: 5%;
+    color:white;
+    background: rgba(0,0,0,0.1);
+    outline: none;
+    margin-right: 1.5rem;
+    padding-top:0.5;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+.intro .header .services select{
+    border:none;
+    background:transparent;
+    color: white;
+    outline: none;
+}
+.intro .header  .services #lang option{
+    color:white;
+    background: grey;
+    outline: none;
+    border:none;
+    border-radius: 5%;
+}
+.intro .header .services #btn{
+    background:red;
+    outline: none;
+    border:none;
+    color:white;
+    border-radius: 5%;
+    width:5rem;
+    font-size: 1rem;
+    font-weight: 540;
+    cursor: pointer;
+}
+/* coding of header starts here */
+/* coding of info starts here */
+.intro .info{
+    color:white;
+    /* border: 1px solid white; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: center;
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+}
+.email{
+    /* border:1px solid black; */
+    width:27rem;
+    overflow:hidden;
+}
+.email #get_started{
+    background:red;
+    outline: none;
+    border:none;
+    color:white;
+    width:30%;
+    height :3.5rem;
+    font-weight: 540;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* padding-left:2rem;
+    padding-right:2rem; */
+}
+.email #txtbox{
+    width:70%;
+    height :3.5rem;
+    outline: none;
+    border:none;
+}
+.email #txtbox::placeholder{
+    position: relative;
+    left:1rem;
+    color:rgba(0,0,0,0.4);
+    font-size: 1rem;
+    font-weight:    100;
+    /* top:-1rem;     */
+}
+/* coding of info ends here */
+/* coding of intro part starts here */
+
+/* coding of template starts here */
+.same_class{
+    /* border: 1px solid white; */
+    background:black;
+    color:white;
+    border-top:7px solid #303030;
+    border-bottom:7px solid #303030;
+    font-size:1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    /* padding: 2rem; */
+    box-shadow: -10px -50px 100px black;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    /* height: max-content; */
+    /* height:30rem; */
+}
+.same_class .text{
+    /* border:1px solid white; */
+    margin-right:5rem;
+    height: max-content;
+    position:relative;
+    margin-top:5rem;
+    /* border: 1px solid white; */
+    width:22rem;
+}
+.same_class .animation{
+    /* border:1px solid white; */
+
+}
+.same_class .animation img{
+    width:30rem;
+    display:block;
+}
+/* coding of template ends here */
+#tv{
+    position: relative;
+    z-index:2;
+    /* border: 1px solid white; */
+}
+#mac{
+    position: relative;
+    z-index:2;   
+}
+#ayushmaan{
+    position:absolute;
+    z-index: 1;
+    margin-left:2.5rem;
+    margin-top:4.5rem;
+}
+#saif_ali_khan{
+    position: absolute;
+    margin-left:5.4rem;
+    margin-top:3rem;
+    z-index:1;
+}
+#childs{
+    margin-right: 5rem;
+}
+.frequently_asked h1{
+    margin-top:4rem;
+    margin-bottom: 2.5rem;
+}
+.frequently_asked{
+    background:black;
+    color:white;
+    border-top:7px solid rgba(128, 128, 128, 0.479);
+    border-bottom:7px solid rgba(128, 128, 128, 0.479);
+    font-size:1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -10px -50px 100px black;
+    align-items: center;
+}
+.frequently_asked .sections{
+    /* border:1px solid white; */
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: block;
+    margin:auto;
+    width:60%;
+    background-color:#303030;
+    margin-top:0.5rem;
+}
+.frequently_asked div p{
+    margin-left: 2rem;
+}
+.last_email{
+    margin-bottom: 5rem;
+}
+@media only screen and (max-width:1018px) {
+     html{
+        font-size: 1rem;
+    } 
+    #childs{
+        margin-right: 0rem;
+    }
+    .same_class{
+      flex-direction:column;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+      padding:0;
+    }
+    .same_class .text{
+        /* border:1px solid white; */
+        margin-right:0rem;
+        height: max-content;
+        position:relative;
+        margin-top:5rem;
+        margin-left: 0rem;
+        /* border: 1px solid white; */
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email #get_started{
+        margin-top:2rem;
+    }
+    .frequently_asked{
+        justify-content: center;
+        text-align: center;
+    }
+    .frequently_asked  .sections{
+        width: 100%;
+    }
+    .intro .header  .services #lang option{
+        color:white;
+        background: grey;
+        outline: none;
+        border:none;
+        border-radius: 5%;
+        height:max-content;
+    }
+    .intro .header  .services #lang option{
+        color:white;
+        background: grey;
+        outline: none;
+        border:none;
+        border-radius: 5%;
+    }
+    .same_class .animation img{
+        width:23rem;
+        display:block;
+    }
+    #saif_ali_khan{
+        position:absolute;
+        margin-left:-8rem;
+        width:15rem;
+        margin-top:1rem;
+    }
+   #ayushmaan{
+        position:absolute;
+        width:270px;
+        height:290px;
+        margin-top:-1rem;
+        margin-left:-8.5rem;
+    }
+    .same_class .text h1{
+        font-size:2rem;
+    }
+    .info h1{
+        font-size:2rem;
+    }
+    .frequently_asked h1{
+        font-size:2rem;
+    }
+    .frequently_asked p{
+        font-size:1.5rem;
+    }
+    .same_class .text p{
+        font-size:1rem;
+    }
+  }
+  @media only screen and (max-width:506px){
+    .intro .header .services{
+        margin-right: 1rem;
+    }
+    #tv{
+        width:18rem;
+    }
+    #mac{
+        width:20rem;
+    }
+    #saif_ali_khan{
+        width:12rem;
+        margin-top:-0.5rem;
+        margin-left:-6rem;
+    }
+    #ayushmaan{
+        width:13rem;
+        margin-top:-2.3rem;
+        margin-left:-6.5rem;
+    }
+    .intro .header .services #btn{
+        width:4rem;
+        font-size: 1rem;
+        font-weight: 540;
+        cursor: pointer;
+        height:max-content;
+    }
+    .intro .header .services #lang{
+            padding:0rem;
+            padding-top:0;
+            padding-bottom:0;
+            font-weight: 600;
+    }
+    .intro .header img{
+        width:8rem;
+        margin-left:1rem;
+        margin-top:0.7rem;
+        /* border:1px solid white; */
+    }
+    #childs{
+        width: 20rem;
+    }
+    #mobile{
+        width: 20rem;
+    }
+    .email{
+        /* border: 1px solid black; */
+        width: max-content;
+    }
+    .email #get_started{
+        background:red;
+        outline: none;
+        border:none;
+        color:white;
+        width:10rem;
+        height :3.5rem;
+        font-weight: 540;
+        cursor: pointer;
+        font-size: 1.2rem;
+        /* padding-left:2rem;
+        padding-right:2rem; */
+    }
+    .email #txtbox{
+        width:20rem;
+        height :3.5rem;
+        outline: none;
+        border:none;
+    }
+    .intro .info{
+        margin-top:5rem;
+        padding-bottom:3rem;
+    }
+  }
